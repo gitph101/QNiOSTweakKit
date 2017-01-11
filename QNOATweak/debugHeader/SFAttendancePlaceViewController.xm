@@ -1,0 +1,41 @@
+%hook SFAttendancePlaceViewController
+- (void)setCurrentPlace:(NSString *)currentPlace { %log; %orig; }
+- (NSString *)currentPlace { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setLatitude:(NSString *)latitude { %log; %orig; }
+- (NSString *)latitude { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setLongitude:(NSString *)longitude { %log; %orig; }
+- (NSString *)longitude { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setNearestTitleLabel:(UILabel *)nearestTitleLabel { %log; %orig; }
+- (UILabel *)nearestTitleLabel { %log; UILabel * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setCurrentTitleLabel:(UILabel *)currentTitleLabel { %log; %orig; }
+- (UILabel *)currentTitleLabel { %log; UILabel * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setNearestPlaceBgView:(UIView *)nearestPlaceBgView { %log; %orig; }
+- (UIView *)nearestPlaceBgView { %log; UIView * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setCurrentPlaceLabel:(UILabel *)currentPlaceLabel { %log; %orig; }
+- (UILabel *)currentPlaceLabel { %log; UILabel * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setCurrentPlaceBgView:(UIView *)currentPlaceBgView { %log; %orig; }
+- (UIView *)currentPlaceBgView { %log; UIView * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setTableHeaderView:(UIView *)tableHeaderView { %log; %orig; }
+- (UIView *)tableHeaderView { %log; UIView * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setDelegate:(__weak id <SFAttendancePlaceViewControllerDelegate> )delegate { %log; %orig; }
+- (__weak id <SFAttendancePlaceViewControllerDelegate> )delegate { %log; __weak id <SFAttendancePlaceViewControllerDelegate>  r = %orig; HBLogDebug(@" = 0x%x", (unsigned int)r); return r; }
+- (void).cxx_destruct { %log; %orig; }
+- (void)searchPlaceViewController:(id)arg1 didSelectedLocationItem:(id)arg2 { %log; %orig; }
+- (void)tableView:(id)arg1 didSelectRowAtIndexPath:(id)arg2 { %log; %orig; }
+- (id)tableView:(id)arg1 cellForRowAtIndexPath:(id)arg2 { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (long long)tableView:(id)arg1 numberOfRowsInSection:(long long)arg2 { %log; long long r = %orig; HBLogDebug(@" = %lld", r); return r; }
+- (void)prepareTableHeaderView { %log; %orig; }
+- (void)sendSearchAttendancePlaceRequestFailWithItem:(id)arg1 { %log; %orig; }
+- (void)sendSearchAttendancePlaceRequestSuccessWithItem:(id)arg1 { %log; %orig; }
+- (void)sendRequestToServer { %log; %orig; }
+- (void)searchPlaceEvent { %log; %orig; }
+- (void)didReceiveMemoryWarning { %log; %orig; }
+- (void)setupTableHeaderViewView { %log; %orig; }
+- (void)setupSearchView { %log; %orig; }
+- (void)viewDidLoad { %log; %orig; }
+- (id)initWithLongitude:(id)arg1 latitude:(id)arg2 currentPlace:(id)arg3 { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (NSString *)debugDescription { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (NSString *)description { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (unsigned long long )hash { %log; unsigned long long  r = %orig; HBLogDebug(@" = %llu", r); return r; }
+- (Class )superclass { %log; Class  r = %orig; HBLogDebug(@" = %@", r); return r; }
+%end

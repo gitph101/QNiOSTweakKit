@@ -1,0 +1,190 @@
+%hook SouFunIMMessageBoxController
+- (void)setNoHeadImgView:(UIView *)noHeadImgView { %log; %orig; }
+- (UIView *)noHeadImgView { %log; UIView * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setSfBindingFinanceVC:(SFBindingOfAcountViewController *)sfBindingFinanceVC { %log; %orig; }
+- (SFBindingOfAcountViewController *)sfBindingFinanceVC { %log; SFBindingOfAcountViewController * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setIsDisMiss:(_Bool )isDisMiss { %log; %orig; }
+- (_Bool )isDisMiss { %log; _Bool  r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (void)setIsTap:(_Bool )isTap { %log; %orig; }
+- (_Bool )isTap { %log; _Bool  r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (void)setTipViewVC:(SouFunNoticeTipViewController *)tipViewVC { %log; %orig; }
+- (SouFunNoticeTipViewController *)tipViewVC { %log; SouFunNoticeTipViewController * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setSelectView:(UIView *)selectView { %log; %orig; }
+- (UIView *)selectView { %log; UIView * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setRightPopover:(DXPopover *)rightPopover { %log; %orig; }
+- (DXPopover *)rightPopover { %log; DXPopover * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setIsShowNotice:(_Bool )isShowNotice { %log; %orig; }
+- (_Bool )isShowNotice { %log; _Bool  r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (void)setFailHeadView:(UIView *)failHeadView { %log; %orig; }
+- (UIView *)failHeadView { %log; UIView * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setColleagueArr:(NSMutableArray *)colleagueArr { %log; %orig; }
+- (NSMutableArray *)colleagueArr { %log; NSMutableArray * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setSearchColleagueArr:(NSMutableArray *)searchColleagueArr { %log; %orig; }
+- (NSMutableArray *)searchColleagueArr { %log; NSMutableArray * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setLeaderArr:(NSMutableArray *)leaderArr { %log; %orig; }
+- (NSMutableArray *)leaderArr { %log; NSMutableArray * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setSearchLeader:(NSMutableArray *)searchLeader { %log; %orig; }
+- (NSMutableArray *)searchLeader { %log; NSMutableArray * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setMainTableView:(UITableView *)mainTableView { %log; %orig; }
+- (UITableView *)mainTableView { %log; UITableView * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setStart:(long long )start { %log; %orig; }
+- (long long )start { %log; long long  r = %orig; HBLogDebug(@" = %lld", r); return r; }
+- (void)setKeyword:(NSString *)keyword { %log; %orig; }
+- (NSString *)keyword { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setDataItems:(NSMutableArray *)dataItems { %log; %orig; }
+- (NSMutableArray *)dataItems { %log; NSMutableArray * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setIsShowRemind:(_Bool )isShowRemind { %log; %orig; }
+- (_Bool )isShowRemind { %log; _Bool  r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (void)setSearchBackView:(UIView *)searchBackView { %log; %orig; }
+- (UIView *)searchBackView { %log; UIView * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setMessageBtnIsSelected:(_Bool )messageBtnIsSelected { %log; %orig; }
+- (_Bool )messageBtnIsSelected { %log; _Bool  r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (void)setMySearchDisplayController:(UISearchDisplayController *)mySearchDisplayController { %log; %orig; }
+- (UISearchDisplayController *)mySearchDisplayController { %log; UISearchDisplayController * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setMySearchBar:(UISearchBar *)mySearchBar { %log; %orig; }
+- (UISearchBar *)mySearchBar { %log; UISearchBar * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setLoadingView:(UIView *)loadingView { %log; %orig; }
+- (UIView *)loadingView { %log; UIView * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setChatDetailInfoArr:(NSMutableArray *)chatDetailInfoArr { %log; %orig; }
+- (NSMutableArray *)chatDetailInfoArr { %log; NSMutableArray * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setContactsGroupArr:(NSMutableArray *)contactsGroupArr { %log; %orig; }
+- (NSMutableArray *)contactsGroupArr { %log; NSMutableArray * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setContactsArr:(NSMutableArray *)contactsArr { %log; %orig; }
+- (NSMutableArray *)contactsArr { %log; NSMutableArray * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setSearchContactsResults:(NSMutableArray *)searchContactsResults { %log; %orig; }
+- (NSMutableArray *)searchContactsResults { %log; NSMutableArray * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setContactsLabel:(UILabel *)contactsLabel { %log; %orig; }
+- (UILabel *)contactsLabel { %log; UILabel * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setContactsImageView:(UIImageView *)contactsImageView { %log; %orig; }
+- (UIImageView *)contactsImageView { %log; UIImageView * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setMessageLabel:(UILabel *)messageLabel { %log; %orig; }
+- (UILabel *)messageLabel { %log; UILabel * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setContactsTableView:(SouFunIMContactsTableView *)contactsTableView { %log; %orig; }
+- (SouFunIMContactsTableView *)contactsTableView { %log; SouFunIMContactsTableView * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setAddFriendsBtn:(UIButton *)addFriendsBtn { %log; %orig; }
+- (UIButton *)addFriendsBtn { %log; UIButton * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setMessageImgView:(UIImageView *)messageImgView { %log; %orig; }
+- (UIImageView *)messageImgView { %log; UIImageView * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setNullView:(UIView *)nullView { %log; %orig; }
+- (UIView *)nullView { %log; UIView * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setCsPageIndex:(long long )csPageIndex { %log; %orig; }
+- (long long )csPageIndex { %log; long long  r = %orig; HBLogDebug(@" = %lld", r); return r; }
+- (void)setCsListArray:(NSMutableArray *)csListArray { %log; %orig; }
+- (NSMutableArray *)csListArray { %log; NSMutableArray * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setCslistcount:(long long )cslistcount { %log; %orig; }
+- (long long )cslistcount { %log; long long  r = %orig; HBLogDebug(@" = %lld", r); return r; }
+- (void)setReloadImage:(AsyncImageView *)reloadImage { %log; %orig; }
+- (AsyncImageView *)reloadImage { %log; AsyncImageView * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setNullNoticeLabel:(UILabel *)nullNoticeLabel { %log; %orig; }
+- (UILabel *)nullNoticeLabel { %log; UILabel * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setBarMessageNum:(NSString *)barMessageNum { %log; %orig; }
+- (NSString *)barMessageNum { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setOwnerRepNum:(NSString *)ownerRepNum { %log; %orig; }
+- (NSString *)ownerRepNum { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setIsShowBack:(_Bool )isShowBack { %log; %orig; }
+- (_Bool )isShowBack { %log; _Bool  r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (void)setTableV:(UITableView *)tableV { %log; %orig; }
+- (UITableView *)tableV { %log; UITableView * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void).cxx_destruct { %log; %orig; }
+- (void)clearIMCache { %log; %orig; }
+- (void)gotoGroupChatVCWithGroupID:(id)arg1 withGroupName:(id)arg2 { %log; %orig; }
+- (void)scanQRCodeJoinGroupSuccessGotoChatVCWithResult:(id)arg1 { %log; %orig; }
+- (void)refreshTipView { %log; %orig; }
+- (void)dissMissTipView { %log; %orig; }
+- (void)popLogin { %log; %orig; }
+- (void)removeFinanceBangdingView { %log; %orig; }
+- (void)createFinanceingBangdingView { %log; %orig; }
+- (void)showFinanceBandingView { %log; %orig; }
+- (void)removeTipView { %log; %orig; }
+- (void)passTrendValues:(id)arg1 { %log; %orig; }
+- (void)showTipViewController { %log; %orig; }
+- (void)createTipViewController { %log; %orig; }
+- (void)loadColleagueData { %log; %orig; }
+- (void)loadLeaderData { %log; %orig; }
+- (void)reloadMessageList { %log; %orig; }
+- (id)getCustomListModelByMessageType:(unsigned long long)arg1 withMessageID:(id)arg2 { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)clearUnReadMessageCountWithMessageID:(id)arg1 { %log; %orig; }
+- (long long)getUnReadMessageCountWithMessageType:(unsigned long long)arg1 { %log; long long r = %orig; HBLogDebug(@" = %lld", r); return r; }
+- (void)updateCustomListModel:(id)arg1 { %log; %orig; }
+- (void)decressTongzhiUnReadCount { %log; %orig; }
+- (void)deleteAllChat { %log; %orig; }
+- (void)tableView:(id)arg1 commitEditingStyle:(long long)arg2 forRowAtIndexPath:(id)arg3 { %log; %orig; }
+- (id)tableView:(id)arg1 titleForDeleteConfirmationButtonForRowAtIndexPath:(id)arg2 { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (_Bool)tableView:(id)arg1 canEditRowAtIndexPath:(id)arg2 { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (id)tableView:(id)arg1 cellForRowAtIndexPath:(id)arg2 { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (long long)numberOfSectionsInTableView:(id)arg1 { %log; long long r = %orig; HBLogDebug(@" = %lld", r); return r; }
+- (long long)tableView:(id)arg1 numberOfRowsInSection:(long long)arg2 { %log; long long r = %orig; HBLogDebug(@" = %lld", r); return r; }
+- (id)tableView:(id)arg1 viewForHeaderInSection:(long long)arg2 { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)tableView:(id)arg1 didSelectRowAtIndexPath:(id)arg2 { %log; %orig; }
+- (double)tableView:(id)arg1 heightForHeaderInSection:(long long)arg2 { %log; double r = %orig; HBLogDebug(@" = %f", r); return r; }
+- (double)tableView:(id)arg1 heightForRowAtIndexPath:(id)arg2 { %log; double r = %orig; HBLogDebug(@" = %f", r); return r; }
+- (void)refreshPage { %log; %orig; }
+- (void)searchBarResignAndChangeUI { %log; %orig; }
+- (void)clearSearchResultData { %log; %orig; }
+- (void)searchBarCancelButtonClicked:(id)arg1 { %log; %orig; }
+- (void)dataItems:(id)arg1 addDailishangSeachResultsRemoveduplicate:(id)arg2 { %log; %orig; }
+- (void)searchBar:(id)arg1 textDidChange:(id)arg2 { %log; %orig; }
+- (id)searchModelInArray:(id)arg1 andText:(id)arg2 { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)searchBarTextDidEndEditing:(id)arg1 { %log; %orig; }
+- (void)searchBarTextDidBeginEditing:(id)arg1 { %log; %orig; }
+- (_Bool)searchBarShouldEndEditing:(id)arg1 { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (_Bool)searchBarShouldBeginEditing:(id)arg1 { %log; _Bool r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (id)getChatKeyWith:(id)arg1 withHouseId:(id)arg2 { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)deleteCurRowInTable:(id)arg1 { %log; %orig; }
+- (void)checkListArray:(id)arg1 { %log; %orig; }
+- (int)getMessageBoxAllCount { %log; int r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (void)removeMessageFromListPage:(id)arg1 { %log; %orig; }
+- (void)sortMessageList { %log; %orig; }
+- (int)refreshListPage:(id)arg1 { %log; int r = %orig; HBLogDebug(@" = %d", r); return r; }
+- (void)loadlistData { %log; %orig; }
+- (void)initData { %log; %orig; }
+- (void)gotoChatView:(id)arg1 animated:(_Bool)arg2 { %log; %orig; }
+- (void)gointoDetail:(id)arg1 index:(long long)arg2 { %log; %orig; }
+- (void)loadlistCellItemData:(id)arg1 { %log; %orig; }
+- (void)popToLastPage { %log; %orig; }
+- (void)showLoadingView { %log; %orig; }
+- (void)creatNullNoticeView { %log; %orig; }
+- (void)hideErrorView { %log; %orig; }
+- (void)handleSingleTap:(id)arg1 { %log; %orig; }
+- (void)showErrorView { %log; %orig; }
+- (void)scrollViewDidEndDragging:(id)arg1 willDecelerate:(_Bool)arg2 { %log; %orig; }
+- (void)createSearchBar { %log; %orig; }
+- (void)tableHeaderViewIsFailTip:(_Bool)arg1 { %log; %orig; }
+- (void)createTableViewForMessageBoxList { %log; %orig; }
+- (void)viewWillDisappear:(_Bool)arg1 { %log; %orig; }
+- (void)viewDidAppear:(_Bool)arg1 { %log; %orig; }
+- (void)removePortraitSetView { %log; %orig; }
+- (void)gotoSetPortrait { %log; %orig; }
+- (void)createPortraitImageView { %log; %orig; }
+- (void)removeMustReadVCNotice { %log; %orig; }
+- (void)showNoPortraitImageView { %log; %orig; }
+- (void)viewWillAppear:(_Bool)arg1 { %log; %orig; }
+- (void)reLoadFriendListUnSuccessfully:(id)arg1 { %log; %orig; }
+- (void)reLoadFriendListSuccessfully:(id)arg1 { %log; %orig; }
+- (void)changeButtonStatu { %log; %orig; }
+- (void)refreshFriendList { %log; %orig; }
+- (void)changeBtnWithIndex:(long long)arg1 { %log; %orig; }
+- (void)changeVC:(id)arg1 { %log; %orig; }
+- (void)addButtonWithRect:(struct CGRect)arg1 buttonTag:(long long)arg2 title:(id)arg3 imageName:(id)arg4 textColor:(id)arg5 inParentView:(id)arg6 isLeft:(_Bool)arg7 { %log; %orig; }
+- (void)addSeperateLineWithRect:(struct CGRect)arg1 andColor:(id)arg2 inParentView:(id)arg3 { %log; %orig; }
+- (void)createBottomView { %log; %orig; }
+- (void)getNotificationRightResultWithResponseItem:(id)arg1 { %log; %orig; }
+- (void)selectBtnPress:(id)arg1 { %log; %orig; }
+- (void)showMenu:(id)arg1 { %log; %orig; }
+- (void)searchFriend:(id)arg1 { %log; %orig; }
+- (void)backWard { %log; %orig; }
+- (void)createBackFowardButton { %log; %orig; }
+- (void)createLeftButtonItem { %log; %orig; }
+- (void)addNotification { %log; %orig; }
+- (void)createRequestFailView { %log; %orig; }
+- (void)initNeedData { %log; %orig; }
+- (void)reLoadFriendsList:(id)arg1 { %log; %orig; }
+- (void)viewDidLoad { %log; %orig; }
+- (void)createMenu { %log; %orig; }
+- (void)dealloc { %log; %orig; }
+- (id)initWithNibName:(id)arg1 bundle:(id)arg2 { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (NSString *)debugDescription { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (NSString *)description { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (unsigned long long )hash { %log; unsigned long long  r = %orig; HBLogDebug(@" = %llu", r); return r; }
+- (Class )superclass { %log; Class  r = %orig; HBLogDebug(@" = %@", r); return r; }
+%end

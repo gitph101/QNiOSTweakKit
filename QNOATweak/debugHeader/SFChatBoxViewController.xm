@@ -1,0 +1,27 @@
+%hook SFChatBoxViewController
+- (void)setWarninGlobalAlertView:(SFGlobalAlertView *)warninGlobalAlertView { %log; %orig; }
+- (SFGlobalAlertView *)warninGlobalAlertView { %log; SFGlobalAlertView * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setIMVCtrl:(SouFunIMMessageBoxController *)IMVCtrl { %log; %orig; }
+- (SouFunIMMessageBoxController *)IMVCtrl { %log; SouFunIMMessageBoxController * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (void)setTabVC:(__weak SFTabChangeViewController *)tabVC { %log; %orig; }
+- (__weak SFTabChangeViewController *)tabVC { %log; __weak SFTabChangeViewController * r = %orig; HBLogDebug(@" = 0x%x", (unsigned int)r); return r; }
+- (void).cxx_destruct { %log; %orig; }
+- (void)jumpToWebVC { %log; %orig; }
+- (void)didReceiveMemoryWarning { %log; %orig; }
+- (void)showMenu:(id)arg1 { %log; %orig; }
+- (void)searchFriend:(id)arg1 { %log; %orig; }
+- (void)addChildVC { %log; %orig; }
+- (void)createRightButtonItems { %log; %orig; }
+- (void)globalAlertView:(id)arg1 clickedButtonIndex:(long long)arg2 { %log; %orig; }
+- (void)changeBtnWithIndex:(long long)arg1 { %log; %orig; }
+- (void)viewWillDisappear:(_Bool)arg1 { %log; %orig; }
+- (void)viewDidAppear:(_Bool)arg1 { %log; %orig; }
+- (void)viewWillAppear:(_Bool)arg1 { %log; %orig; }
+- (void)userLogoutSuccessNofitication:(id)arg1 { %log; %orig; }
+- (void)addNotification { %log; %orig; }
+- (void)viewDidLoad { %log; %orig; }
+- (NSString *)debugDescription { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (NSString *)description { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
+- (unsigned long long )hash { %log; unsigned long long  r = %orig; HBLogDebug(@" = %llu", r); return r; }
+- (Class )superclass { %log; Class  r = %orig; HBLogDebug(@" = %@", r); return r; }
+%end
