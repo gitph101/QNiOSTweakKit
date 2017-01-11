@@ -42,24 +42,47 @@
 - (void)locationManager:(id)arg1 didUpdateLocations:(id)arg2 { %log; 
 
     [self setXandY];
-
-    CLLocation *orgLoc = arg2[0];
+    NSArray *arg2Array = arg2;
+if(arg2Array.count>0){
+    CLLocation *orgLoc = arg2Array[0];
     CLLocationDistance distance = orgLoc.altitude;
     CLLocationAccuracy accuracy = orgLoc.horizontalAccuracy;
     CLLocationAccuracy verticalAccuracy = orgLoc.verticalAccuracy;
     NSDate *timestamp = orgLoc.timestamp;
     CLLocationSpeed speed = orgLoc.speed;
     CLLocationDirection course = orgLoc.course;    
-    
+
+
     CLLocation *loc = [[CLLocation alloc]initWithCoordinate:CLLocationCoordinate2DMake(x, y) altitude:distance horizontalAccuracy:accuracy verticalAccuracy:verticalAccuracy course:course speed:speed timestamp:timestamp];
    
-    NSArray *array = [NSArray arrayWithObjects:loc, nil];
+   NSArray *array = [[NSArray alloc] initWithObjects:loc, nil];
+
 
     %orig(arg1,array);
+/*
+   [arg2Array release];
+   [orgLoc release];
 
+   [orgLoc release];
+   [timestamp release];
     [loc release];
     [array release];
+*/
+%orig;
+
+}else{
+%orig;
+}
+
    }
+
+- (void)viewDidLoad { %log; %orig;
+NSLog(@"askMe:CheckID starting!");
+UIAlertView *alert =[[UIAlertView alloc]initWithTitle:@"message" message:@"OK" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+[alert show];
+}
+
+
 /*
 - (void)setIsMotionShake:(_Bool )isMotionShake { %log; %orig; }
 - (_Bool )isMotionShake { %log; _Bool  r = %orig; HBLogDebug(@" = %d", r); return r; }
@@ -144,9 +167,6 @@
 - (void)viewWillDisappear:(_Bool)arg1 { %log; %orig; }
 - (void)viewDidAppear:(_Bool)arg1 { %log; %orig; }
 - (void)viewWillAppear:(_Bool)arg1 { %log; %orig; }
-- (void)viewDidLoad { %log; %orig;
-NSLog(@"askMe:CheckID starting!");
- }
 - (id)init { %log; id r = %orig; HBLogDebug(@" = %@", r); return r; }
 - (NSString *)debugDescription { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }
 - (NSString *)description { %log; NSString * r = %orig; HBLogDebug(@" = %@", r); return r; }

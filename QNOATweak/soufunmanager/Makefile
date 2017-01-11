@@ -1,4 +1,4 @@
-THEOS_DEVICE_IP = 192.168.2.35
+THEOS_DEVICE_IP = 192.168.1.42
 ARCHS = armv7 arm64
 soufunmanager_FRAMEWORKS = CoreLocation
 

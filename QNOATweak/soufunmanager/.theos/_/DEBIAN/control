@@ -1,0 +1,10 @@
+Package: com.qunian.soufunmanager
+Name: soufunmanager
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: qunian
+Author: qunian
+Section: Tweaks
+Version: 0.0.1-17+debug
+Installed-Size: 120
